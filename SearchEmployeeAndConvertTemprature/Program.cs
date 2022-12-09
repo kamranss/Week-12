@@ -8,36 +8,61 @@ Celcius celcius = new Celcius(23);
 
 Kelvin kelvin = celcius;
 
-Console.WriteLine(kelvin.KDegree);
+Console.WriteLine($"Kelvin: {kelvin.KDegree}");
 #endregion
 
-Employee employee1 = new Employee(Convert.ToDateTime(12 - 03 - 1992));
+#region Creating Employee info adding into Arr List and Finding the number of Employees within the given Range"
+Employee employee1 = new Employee(new DateTime(1992,03,12));
+employee1.Name = "Kamil";
+employee1.Surname = "Seidov";
 employee1.Salary = 2000;
-Employee employee2 = new Employee(Convert.ToDateTime(12 - 03 - 1994));
+Employee employee2 = new Employee(new DateTime(1994,03,12));
+employee2.Name = "Zakir";
+employee2.Surname = "Aliyev";
 employee2.Salary = 2300;
-Employee employee3 = new Employee(Convert.ToDateTime(12 - 03 - 2002));
+Employee employee3 = new Employee(new DateTime(2002,03,12));
+employee3.Name = "Samir";
+employee3.Surname = "Aliyev";
 employee3.Salary = 1800;
-Employee employee4 = new Employee(Convert.ToDateTime(12 - 03 - 2003));
+Employee employee4 = new Employee(new DateTime(2003,03,12));
+employee4.Name = "Valeh";
+employee4.Surname = "Ayazov";
 employee4.Salary = 4000;
-Employee employee5 = new Employee(Convert.ToDateTime(12 - 03 - 1985));
+Employee employee5 = new Employee(new DateTime(1985,03,12));
+employee5.Name = "Akira";
+employee5.Surname = "Abiyev";
 employee5.Salary = 2654;
-Employee employee6 = new Employee(Convert.ToDateTime(12 - 03 - 1987));
+Employee employee6 = new Employee(new DateTime(1985,03,12));
+employee6.Name = "Eugen";
+employee6.Surname = "Agayev";
 employee6.Salary = 3567;
-Employee employee7 = new Employee(Convert.ToDateTime(12 - 03 - 1997));
+Employee employee7 = new Employee(new DateTime(1997,03,12));
+employee7.Name = "Islam";
+employee7.Surname = "Abayev";
 employee7.Salary = 1200;
-Employee employee8 = new Employee(Convert.ToDateTime(12 - 03 - 2000));
+Employee employee8 = new Employee(new DateTime(2000,03,12));
+employee8.Name = "Sirac";
+employee8.Surname = "Amayev";
 employee8.Salary = 1700;
 
 
-employee1.AddEmployee(employee1);
-employee2.AddEmployee(employee2);
-employee3.AddEmployee(employee3);
-employee4.AddEmployee(employee4);
-employee5.AddEmployee(employee5);
-employee6.AddEmployee(employee6);
-employee7.AddEmployee(employee7);
-employee8.AddEmployee(employee8);
+EmployeesDataBase database = new EmployeesDataBase();
 
-Console.WriteLine(employee1.arr);
+database.AddEmployee(employee1);
+database.AddEmployee(employee2);
+database.AddEmployee(employee3);
+database.AddEmployee(employee4);
+database.AddEmployee(employee5);
+database.AddEmployee(employee6);
+database.AddEmployee(employee7);
+database.AddEmployee(employee8);
+
+Console.WriteLine($" The number of employees within the given range is: ->> {database.FindEmployee(new DateTime(1986, 03, 12), new DateTime(2000, 03, 12), 2000)}");
+#endregion 
+
+#region Showing all Employees info 
+database.ShowEmployeeInfo();
+#endregion
+
 
 

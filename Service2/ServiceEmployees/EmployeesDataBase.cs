@@ -6,34 +6,26 @@ using System.Threading.Tasks;
 
 namespace Service2
 {
-    public class Employee:IEmployee
+    public class EmployeesDataBase
     {
-        public static int Count = 0;
-        public readonly int Id;
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public DateTime Birthday { get; set; }
-        public int Salary { get; set; }
-
         public Employee[] arr;
 
 
-        public Employee(DateTime birthday)
+        public EmployeesDataBase()
         {
-            Count++;
-            Id = Count;
-
-            Birthday = birthday;
-
+            arr = new Employee[0];
         }
 
+        #region Adding new Employee
         public void AddEmployee(Employee employee)
         {
             Array.Resize(ref arr, arr.Length + 1);
             arr[arr.Length - 1] = employee;
 
         }
+        #endregion
 
+        #region Find Employees number according to the given parameters
         public int FindEmployee(DateTime a, DateTime b, int salary)
         {
             int count = 0;
@@ -47,5 +39,19 @@ namespace Service2
             }
             return count;
         }
+        #endregion
+
+        #region Showing all Employees Info
+        public void ShowEmployeeInfo()
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i].ShowEmployeeInfo();
+            }
+        }
+        #endregion
+
+
+
     }
 }
