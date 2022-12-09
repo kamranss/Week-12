@@ -38,6 +38,6 @@ employee6.AddEmployee(employee6);
 employee7.AddEmployee(employee7);
 employee8.AddEmployee(employee8);
 
-
+Console.WriteLine(employee1.arr);
 
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Service2
 {
-    public class Employee
+    public class Employee:IEmployee
     {
         public static int Count = 0;
         public readonly int Id;
@@ -15,7 +15,7 @@ namespace Service2
         public DateTime Birthday { get; set; }
         public int Salary { get; set; }
 
-        private Employee[] arr;
+        public Employee[] arr;
 
 
         public Employee(DateTime birthday)
