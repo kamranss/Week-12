@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Service2
 {
-    internal class IEmployee
+    public class IEmployee
     {
+        public Employee[] arr;
+        public void AddEmployee(Employee employee)
+        {
+            Array.Resize(ref arr, arr.Length + 1);
+            arr[arr.Length - 1] = employee;
+
+        }
     }
 }
