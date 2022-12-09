@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SearchEmployeeAndConvertTemprature/1.0.0": {
+        "dependencies": {
+          "Service1": "1.0.0",
+          "Service2": "1.0.0"
+        },
+        "runtime": {
+          "SearchEmployeeAndConvertTemprature.dll": {}
+        }
+      },
+      "Service1/1.0.0": {
+        "runtime": {
+          "Service1.dll": {}
+        }
+      },
+      "Service2/1.0.0": {
+        "runtime": {
+          "Service2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SearchEmployeeAndConvertTemprature/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

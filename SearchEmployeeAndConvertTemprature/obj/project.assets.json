@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Service1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Service1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service1.dll": {}
+        }
+      },
+      "Service2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Service2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service2.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Service1/1.0.0": {
+      "type": "project",
+      "path": "../Service1/Service1.csproj",
+      "msbuildProject": "../Service1/Service1.csproj"
+    },
+    "Service2/1.0.0": {
+      "type": "project",
+      "path": "../Service2/Service2.csproj",
+      "msbuildProject": "../Service2/Service2.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Service1 >= 1.0.0",
+      "Service2 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\kamra\\.nuget\\packages\\": {}
@@ -33,7 +68,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\kamra\\source\\repos\\SearchEmployeeAndConvertTemprature\\Service1\\Service1.csproj": {
+              "projectPath": "C:\\Users\\kamra\\source\\repos\\SearchEmployeeAndConvertTemprature\\Service1\\Service1.csproj"
+            },
+            "C:\\Users\\kamra\\source\\repos\\SearchEmployeeAndConvertTemprature\\Service2\\Service2.csproj": {
+              "projectPath": "C:\\Users\\kamra\\source\\repos\\SearchEmployeeAndConvertTemprature\\Service2\\Service2.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

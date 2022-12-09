@@ -1,0 +1,12 @@
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\bin\Debug\net6.0\Service1.deps.json
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\bin\Debug\net6.0\Service1.dll
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\bin\Debug\net6.0\Service1.pdb
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\obj\Debug\net6.0\Service1.csproj.AssemblyReference.cache
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\obj\Debug\net6.0\Service1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\obj\Debug\net6.0\Service1.AssemblyInfoInputs.cache
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\obj\Debug\net6.0\Service1.AssemblyInfo.cs
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\obj\Debug\net6.0\Service1.csproj.CoreCompileInputs.cache
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\obj\Debug\net6.0\Service1.dll
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\obj\Debug\net6.0\refint\Service1.dll
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\obj\Debug\net6.0\Service1.pdb
+C:\Users\kamra\source\repos\SearchEmployeeAndConvertTemprature\Service1\obj\Debug\net6.0\ref\Service1.dll

@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Service2
 {
-    internal class Employee
+    public class Employee
     {
         public static int Count = 0;
         public readonly int Id;
         public string Name { get; set; }
         public string Surname { get; set; }
-        public DateOnly Birthday { get; set; }
+        public DateTime Birthday { get; set; }
         public int Salary { get; set; }
 
-        public Employee[] arr;
+        private Employee[] arr;
 
 
-        public Employee(DateOnly birthday)
+        public Employee(DateTime birthday)
         {
             Count++;
             Id = Count;
@@ -34,7 +34,7 @@ namespace Service2
 
         }
 
-        public int FindEmployee(DateOnly a, DateOnly b, int salary)
+        public int FindEmployee(DateTime a, DateTime b, int salary)
         {
             int count = 0;
             foreach (var item in arr)
